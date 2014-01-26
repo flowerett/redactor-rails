@@ -6,6 +6,10 @@ module RedactorRails
 
   FILE_TYPES = ['application/msword', 'application/pdf', 'text/plain', 'text/rtf', 'application/vnd.ms-excel']
 
+  VIDEO_TYPES = ['video/mpeg', 'video/mp4', 'video/ogg', 'video/quicktime', 'video/webm', 'video/x-ms-wmv', 'video/x-flv']
+
+  AUDIO_TYPES = ['audio/basic', 'audio/mp4', 'audio/mpeg', 'audio/ogg', 'audio/vorbis', 'audio/x-ms-wma', 'audio/x-ms-wax', 'audio/vnd.rn-realaudio', 'audio/vnd.wave', 'audio/webm']
+
   autoload :Http, 'redactor-rails/http'
   autoload :Devise, 'redactor-rails/devise'
 
@@ -21,7 +25,8 @@ module RedactorRails
   mattr_accessor :image_file_types, :document_file_types
   @@image_file_types = ["jpg", "jpeg", "png", "gif", "tiff"]
   @@document_file_types = ["pdf", "doc", "docx", "xls", "xlsx", "rtf", "txt"]
-
+  @@video_file_types = ["mp4", "avi", "mov", "mpeg"]
+  @@audio_file_types = ["wma", "mp3", "ogg", "wav", "aif"]
 
   def self.picture_model
     RedactorRails::Picture
@@ -29,6 +34,14 @@ module RedactorRails
 
   def self.document_model
     RedactorRails::Document
+  end
+
+  def self.video_model
+    RedactorRails::Video
+  end
+
+  def self.audio_model
+    RedactorRails::Audio
   end
 
   def self.devise_user

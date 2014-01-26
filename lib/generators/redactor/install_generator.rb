@@ -51,23 +51,23 @@ module Redactor
       protected
 
       def redactor_dir
-  'redactor_rails'
+        'redactor_rails'
       end
 
       def generator_dir
-  @generator_dir ||= [orm, backend].join('/')
+        @generator_dir ||= [orm, backend].join('/')
       end
 
       def uploaders_dir
-  @uploaders_dir ||= ['base', 'carrierwave'].join('/')
+        @uploaders_dir ||= ['base', 'carrierwave'].join('/')
       end
 
       def orm
-  options[:orm] || "active_record"
+        options[:orm] || "active_record"
       end
 
       def backend
-  options[:backend] || "carrierwave"
+        options[:backend] || "carrierwave"
       end
 
     end
