@@ -22,7 +22,7 @@ module RedactorRails
   require 'redactor-rails/engine'
   require 'redactor-rails/helper'
 
-  mattr_accessor :image_file_types, :document_file_types
+  mattr_accessor :image_file_types, :document_file_types, :video_file_types, :audio_file_types
   @@image_file_types = ["jpg", "jpeg", "png", "gif", "tiff"]
   @@document_file_types = ["pdf", "doc", "docx", "xls", "xlsx", "rtf", "txt"]
   @@video_file_types = ["mp4", "avi", "mov", "mpeg"]
