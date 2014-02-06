@@ -208,3 +208,7 @@ You may use `Redactor` for non-commercial websites for free, however, we do not 
 
 Redactor has [3 different licenses](http://redactorjs.com/download/) for commercial use.
 For details please see [License Agreement](http://redactorjs.com/download/).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/flowerett/redactor-rails/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
